@@ -14,7 +14,7 @@
       }
 
       function addToCartTl(productName, productPrice) {
-        const botUsername = 'rerez_x_hosting';
+        const botUsername = 'rerez_official';
         const message = `Halo, saya ingin membeli produk: ${productName} dengan harga Rp${productPrice}. Apakah stok masih tersedia?`;
         const url = `https://t.me/${botUsername}?start=${encodeURIComponent(message)}`;
         window.location.href = url;
