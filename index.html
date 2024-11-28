@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Rerezz Official Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Toko Status -->
+    <div class="store-status" id="storeStatus">
+        Toko sedang tutup
+    </div>
+    <!-- Header Profil Toko -->
+    <div class="store-header">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Profil Toko">
+        <div class="store-info">
+            <h1>Rerezz Official</h1>
+            <p>Produk Digital</p>
+            <a href="#">Detail Toko &rarr;</a>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Cari Produk di Rerezz Official" onkeyup="searchPackage()">
+      <i class="fa fa-search"></i>
+  </div>
+
+    <br><hr>
+    
+    <div class="container">
+      <h1>List Panel Public</h1>
+      <div class="scroll-container">
+
+        <div class="panel package" data-name="Petrodactyl Panel 1GB" data-price="1000" data-description="Panel 1GB">
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <p class="price">Panel 1GB</p>
+          <p class="feature"><i class="fas fa-check"></i> Aktif 30 Haari</p>
+          <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Server Public</p>
+          <button onclick="openModal('modal1')" class="add-to-cart">Rp. 1.000 <i class="fas fa-shopping-cart"></i></button>
+        </div>
+
+        <div class="panel package" data-name="Petrodactyl Panel 2GB" data-price="2000" data-description="Panel 2GB">
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <p class="price">Panel 2GB</p>
+          <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Server Public</p>
+          <button onclick="openModal('modal2')" class="add-to-cart">Rp. 2.000 <i class="fas fa-shopping-cart"></i></button>
+        </div>
+
+        <div class="panel package" data-name="Petrodactyl Panel 3GB" data-price="3000" data-description="Panel 3GB">
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <p class="price">Panel 3GB</p>
+          <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Server Public</p>
+          <button onclick="openModal('modal3')" class="add-to-cart">Rp. 3.000 <i class="fas fa-shopping-cart"></i></button>
+        </div>
+        
+        <div class="panel package" data-name="Petrodactyl Panel 4GB" data-price="4000" data-description="Panel 4GB">
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <p class="price">Panel 4GB</p>
+          <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Server Public</p>
+          <button onclick="openModal('modal4')" class="add-to-cart">Rp. 4.000 <i class="fas fa-shopping-cart"></i></button>
+        </div>
+
+        <div class="panel package" data-name="Petrodactyl Panel 5GB" data-price="5000" data-description="Panel 5GB">
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <p class="price">Panel 5GB</p>
+          <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Server Public</p>
+          <button onclick="openModal('modal5')" class="add-to-cart">Rp. 5.000 <i class="fas fa-shopping-cart"></i></button>
+        </div>
+
+        <div class="panel package" data-name="Petrodactyl Panel 6GB" data-price="6000" data-description="Panel 6GB">
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <p class="price">Panel 6GB</p>
+          <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Server Public</p>
+          <button onclick="openModal('modal6')" class="add-to-cart">Rp. 6.000 <i class="fas fa-shopping-cart"></i></button>
+        </div>
+        
+        <div class="panel package" data-name="Petrodactyl Panel 7GB" data-price="7000" data-description="Panel 7GB">
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <p class="price">Panel 7GB</p>
+          <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Server Public</p>
+          <button onclick="openModal('modal7')" class="add-to-cart">Rp. 7.000 <i class="fas fa-shopping-cart"></i></button>
+        </div>
+        
+        <div class="panel package" data-name="Petrodactyl Panel 8GB" data-price="8000" data-description="Panel 8GB">
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <p class="price">Panel 8GB</p>
+          <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Server Public</p>
+          <button onclick="openModal('modal8')" class="add-to-cart">Rp. 8.000 <i class="fas fa-shopping-cart"></i></button>
+        </div>
+        
+        <div class="panel package" data-name="Petrodactyl Panel 9GB" data-price="9000" data-description="Panel 9GB">
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <p class="price">Panel 9GB</p>
+          <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Server Public</p>
+          <button onclick="openModal('modal9')" class="add-to-cart">Rp. 9.000 <i class="fas fa-shopping-cart"></i></button>
+        </div>
+        
+        <div class="panel package" data-name="Petrodactyl Panel 10GB" data-price="10000" data-description="Panel 10GB">
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <p class="price">Panel 10GB</p>
+          <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Server Public</p>
+          <button onclick="openModal('modal10')" class="add-to-cart">Rp. 10.000 <i class="fas fa-shopping-cart"></i></button>
+        </div>
+
+        <div class="panel package" data-name="Petrodactyl Panel Unli" data-price="12000" data-description="Panel Unli">
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <p class="price">Panel Unli</p>
+          <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+          <p class="feature"><i class="fas fa-check"></i> Server Public</p>
+          <button onclick="openModal('modal11')" class="add-to-cart">Rp. 12.000 <i class="fas fa-shopping-cart"></i></button>
+        </div>
+
+      </div>
+  </div>
+
+  <div class="container">
+    <h1>List Panel Private</h1>
+    <div class="scroll-container">
+
+      <div class="panel package" data-name="Petrodactyl Panel Pripat 1GB" data-price="1500" data-description="Panel Pripat 1GB">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <p class="price">Panel 1GB</p>
+        <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Server Pripat</p>
+        <button onclick="openModal('modal12')" class="add-to-cart">Rp. 1.500 <i class="fas fa-shopping-cart"></i></button>
+      </div>
+      
+      <div class="panel package" data-name="Petrodactyl Panel Pripat 2GB" data-price="3000" data-description="Panel Pripat 2GB">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <p class="price">Panel 2GB</p>
+        <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Server Pripat</p>
+        <button onclick="openModal('modal13')" class="add-to-cart">Rp. 3.000 <i class="fas fa-shopping-cart"></i></button>
+      </div>
+      
+      <div class="panel package" data-name="Petrodactyl Panel Pripat 3GB" data-price="4500" data-description="Panel Pripat 3GB">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <p class="price">Panel 3GB</p>
+        <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Server Pripat</p>
+        <button onclick="openModal('modal14')" class="add-to-cart">Rp. 4.500 <i class="fas fa-shopping-cart"></i></button>
+      </div>
+      
+      <div class="panel package" data-name="Petrodactyl Panel Pripat 4GB" data-price="6000" data-description="Panel Pripat 4GB">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <p class="price">Panel 4GB</p>
+        <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Server Pripat</p>
+        <button onclick="openModal('modal15')" class="add-to-cart">Rp. 6.000 <i class="fas fa-shopping-cart"></i></button>
+      </div>
+      
+      <div class="panel package" data-name="Petrodactyl Panel Pripat 5GB" data-price="7500" data-description="Panel Pripat 5GB">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <p class="price">Panel 5GB</p>
+        <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Server Pripat</p>
+        <button onclick="openModal('modal16')" class="add-to-cart">Rp. 7.500 <i class="fas fa-shopping-cart"></i></button>
+      </div>
+      
+      <div class="panel package" data-name="Petrodactyl Panel Pripat 6GB" data-price="9000" data-description="Panel Pripat 6GB">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <p class="price">Panel 6GB</p>
+        <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Server Pripat</p>
+        <button onclick="openModal('modal17')" class="add-to-cart">Rp. 9.000 <i class="fas fa-shopping-cart"></i></button>
+      </div>
+      
+      <div class="panel package" data-name="Petrodactyl Panel Pripat 7GB" data-price="10500" data-description="Panel Pripat 7GB">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <p class="price">Panel 7GB</p>
+        <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Server Pripat</p>
+        <button onclick="openModal('modal18')" class="add-to-cart">Rp. 10.500 <i class="fas fa-shopping-cart"></i></button>
+      </div>
+      
+      <div class="panel package" data-name="Petrodactyl Panel Pripat 8GB" data-price="12000" data-description="Panel Pripat 8GB">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <p class="price">Panel 8GB</p>
+        <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Server Pripat</p>
+        <button onclick="openModal('modal19')" class="add-to-cart">Rp. 12.000 <i class="fas fa-shopping-cart"></i></button>
+      </div>
+      
+      <div class="panel package" data-name="Petrodactyl Panel Pripat 9GB" data-price="13500" data-description="Panel Pripat 9GB">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <p class="price">Panel 9GB</p>
+        <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Server Pripat</p>
+        <button onclick="openModal('modal20')" class="add-to-cart">Rp. 13.500 <i class="fas fa-shopping-cart"></i></button>
+      </div>
+      
+      <div class="panel package" data-name="Petrodactyl Panel Pripat 10GB" data-price="15000" data-description="Panel Pripat 10GB">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <p class="price">Panel 10GB</p>
+        <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Server Pripat</p>
+        <button onclick="openModal('modal21')" class="add-to-cart">Rp. 15.000 <i class="fas fa-shopping-cart"></i></button>
+      </div>
+      
+      <div class="panel package" data-name="Petrodactyl Panel Pripat 10GB" data-price="16000" data-description="Panel Pripat Unli">
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <p class="price">Panel Unlimited</p>
+        <p class="feature"><i class="fas fa-check"></i> Aktif 30 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Garansi 15 Hari</p>
+        <p class="feature"><i class="fas fa-check"></i> Server Pripat</p>
+        <button onclick="openModal('modal22')" class="add-to-cart">Rp. 16.000 <i class="fas fa-shopping-cart"></i></button>
+      </div>
+
+    </div>
+  </div>
+
+    <!-- Modal Pop-up Produk 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal1')"><i class="fas fa-times"></i></span>
+            <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+            <div class="product-info">
+                <h3>Petrodactyl Panel</h3>
+                <ul>
+                    <li>Spesifikasi :</li>
+                    <li>Ram: 1 GB</li>
+                    <li>Disk: 1 GB</li>
+                    <li>Cpu: 50%</li>
+                </ul><br>
+                <p class="pricee">Rp. 2.000</p>
+                <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+                <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 1GB', 1000)">
+                  <i class="fab fa-whatsapp"></i>WhatsApp
+                </a>
+                <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 1GB', 1000)">
+                  <i class="fab fa-telegram"></i>Telegram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Pop-up Produk 2 -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+          <span class="modal-close" onclick="closeModal('modal2')"><i class="fas fa-times"></i></span>
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <div class="product-info">
+              <h3>Petrodactyl Panel</h3>
+              <ul>
+                  <li>Spesifikasi :</li>
+                  <li>Ram: 2 GB</li>
+                  <li>Disk: 2 GB</li>
+                  <li>Cpu: 100%</li>
+              </ul><br>
+              <p class="pricee">Rp. 2.000</p>
+              <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+              <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 2GB', 2000)">
+                <i class="fab fa-whatsapp"></i>WhatsApp
+              </a>
+              <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 2GB', 2000)">
+                <i class="fab fa-telegram"></i>Telegram
+              </a>
+          </div>
+      </div>
+    </div>
+
+  <!-- Modal Pop-up Produk 3 -->
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+          <span class="modal-close" onclick="closeModal('modal3')"><i class="fas fa-times"></i></span>
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <div class="product-info">
+              <h3>Petrodactyl Panel</h3>
+              <ul>
+                  <li>Spesifikasi :</li>
+                  <li>Ram: 3 GB</li>
+                  <li>Disk: 3 GB</li>
+                  <li>Cpu: 150%</li>
+              </ul><br>
+              <p class="pricee">Rp. 3.000</p>
+              <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+              <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 3GB', 3000)">
+                <i class="fab fa-whatsapp"></i>WhatsApp
+              </a>
+              <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 2GB', 3000)">
+                <i class="fab fa-telegram"></i>Telegram
+              </a>
+          </div>
+      </div>
+    </div>
+
+    <!-- Modal Pop-up Produk 2 -->
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+          <span class="modal-close" onclick="closeModal('modal4')"><i class="fas fa-times"></i></span>
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <div class="product-info">
+              <h3>Petrodactyl Panel</h3>
+              <ul>
+                  <li>Spesifikasi :</li>
+                  <li>Ram: 4 GB</li>
+                  <li>Disk: 4 GB</li>
+                  <li>Cpu: 200%</li>
+              </ul><br>
+              <p class="pricee">Rp. 4.000</p>
+              <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+              <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 4GB', 4000)">
+                <i class="fab fa-whatsapp"></i>WhatsApp
+              </a>
+              <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 4GB', 4000)">
+                <i class="fab fa-telegram"></i>Telegram
+              </a>
+          </div>
+      </div>
+    </div>
+
+    <!-- Modal Pop-up Produk 2 -->
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+          <span class="modal-close" onclick="closeModal('modal5')"><i class="fas fa-times"></i></span>
+          <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+          <div class="product-info">
+              <h3>Petrodactyl Panel</h3>
+              <ul>
+                  <li>Spesifikasi :</li>
+                  <li>Ram: 5 GB</li>
+                  <li>Disk: 5 GB</li>
+                  <li>Cpu: 250%</li>
+              </ul><br>
+              <p class="pricee">Rp. 5.000</p>
+              <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+              <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 5GB', 5000)">
+                <i class="fab fa-whatsapp"></i>WhatsApp
+              </a>
+              <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 5GB', 5000)">
+                <i class="fab fa-telegram"></i>Telegram
+              </a>
+          </div>
+      </div>
+    </div>
+
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal6')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 6 GB</li>
+            <li>Disk: 6 GB</li>
+            <li>Cpu: 300%</li>
+          </ul><br>
+          <p class="pricee">Rp. 6.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 6GB', 6000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 6GB', 6000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal7" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal7')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 7 GB</li>
+            <li>Disk: 7 GB</li>
+            <li>Cpu: 350%</li>
+          </ul><br>
+          <p class="pricee">Rp. 7.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 7GB', 7000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 7GB', 7000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal8" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal8')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 8 GB</li>
+            <li>Disk: 8 GB</li>
+            <li>Cpu: 400%</li>
+          </ul><br>
+          <p class="pricee">Rp. 8.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 8GB', 8000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 8GB', 8000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal9" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal9')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 9 GB</li>
+            <li>Disk: 9 GB</li>
+            <li>Cpu: 450%</li>
+          </ul><br>
+          <p class="pricee">Rp. 9.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 9GB', 9000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 9GB', 9000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal10" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal10')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 10 GB</li>
+            <li>Disk: 10 GB</li>
+            <li>Cpu: 500%</li>
+          </ul><br>
+          <p class="pricee">Rp. 10.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 10GB', 10000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 10GB', 10000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal11" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal11')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: Unlimited</li>
+            <li>Disk: Unlimited</li>
+            <li>Cpu: Unlimited</li>
+          </ul><br>
+          <p class="pricee">Rp. 12.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel Unli', 12000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel Unli', 12000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <div id="modal12" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal12')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 1 GB</li>
+            <li>Disk: 1 GB</li>
+            <li>Cpu: 50%</li>
+          </ul><br>
+          <p class="pricee">Rp. 1.500</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 1GB', 1500)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 1GB', 1500)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal13" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal13')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 2 GB</li>
+            <li>Disk: 2 GB</li>
+            <li>Cpu: 100%</li>
+          </ul><br>
+          <p class="pricee">Rp. 3.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 2GB', 3000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 2GB', 3000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal14" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal14')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 3 GB</li>
+            <li>Disk: 3 GB</li>
+            <li>Cpu: 150%</li>
+          </ul><br>
+          <p class="pricee">Rp. 4.500</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 3GB', 4500)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 3GB', 4500)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal15" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal15')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 4 GB</li>
+            <li>Disk: 4 GB</li>
+            <li>Cpu: 200%</li>
+          </ul><br>
+          <p class="pricee">Rp. 6.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 4GB', 6000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 4GB', 6000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal16" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal16')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 5 GB</li>
+            <li>Disk: 5 GB</li>
+            <li>Cpu: 250%</li>
+          </ul><br>
+          <p class="pricee">Rp. 7.500</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 5GB', 7500)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 5GB', 7500)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal17" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal17')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 6 GB</li>
+            <li>Disk: 6 GB</li>
+            <li>Cpu: 300%</li>
+          </ul><br>
+          <p class="pricee">Rp. 9.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 6GB', 9000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 6GB', 9000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal18" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal18')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 7 GB</li>
+            <li>Disk: 7 GB</li>
+            <li>Cpu: 350%</li>
+          </ul><br>
+          <p class="pricee">Rp. 10.500</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 7GB', 10500)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 7GB', 10500)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal19" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal19')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 8 GB</li>
+            <li>Disk: 8 GB</li>
+            <li>Cpu: 400%</li>
+          </ul><br>
+          <p class="pricee">Rp. 12.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 8GB', 12000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 8GB', 12000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal20" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal20')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 9 GB</li>
+            <li>Disk: 9 GB</li>
+            <li>Cpu: 450%</li>
+          </ul><br>
+          <p class="pricee">Rp. 13.500</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 9GB', 13500)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 9GB', 13500)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal21" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal21')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: 10 GB</li>
+            <li>Disk: 10 GB</li>
+            <li>Cpu: 500%</li>
+          </ul><br>
+          <p class="pricee">Rp. 15.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel 10GB', 15000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel 10GB', 15000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal22" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal22')"><i class="fas fa-times"></i></span>
+        <img src="https://pomf2.lain.la/f/meq91y7s.jpg" alt="Detail Produk">
+        <div class="product-info">
+          <h3>Petrodactyl Panel</h3>
+          <ul>
+            <li>Spesifikasi :</li>
+            <li>Ram: Unlimited/li>
+            <li>Disk: Unlimited</li>
+            <li>Cpu: Unlimited</li>
+          </ul><br>
+          <p class="pricee">Rp. 16.000</p>
+          <p style="text-align: center;">Silahkan Pilih Methode Pemesanan</p>
+          <a href="#" class="add-to-cart left-button" onclick="addToCart('Petrodactyl Panel Unli', 16000)">
+            <i class="fab fa-whatsapp"></i>WhatsApp
+          </a>
+          <a href="#" class="add-to-cart left-button" onclick="addToCartTl('Petrodactyl Panel Unli', 16000)">
+            <i class="fab fa-telegram"></i>Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src='sc.js'></script>
+</body>
+</html>
