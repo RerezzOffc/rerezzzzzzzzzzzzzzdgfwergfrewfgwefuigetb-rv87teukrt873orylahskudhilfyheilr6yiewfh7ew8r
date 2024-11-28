@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: #333;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Toko Status */
+.store-status {
+  background-color: #ffe0e0;
+  color: #d9534f;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.store-status.open {
+  background-color: #e0ffe0;
+  color: #28a745;
+}
+
+/* Header Profil Toko */
+.store-header {
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  border: 3px solid #c71585;
+}
+
+.store-header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c71585;
+  box-shadow: 0px 4px 12px rgba(199, 21, 133, 0.5), 0px 4px 12px rgba(199, 21, 133, 0.5);
+}
+
+.store-info {
+  flex: 1;
+}
+
+.store-info h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.store-info p {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.store-info a {
+  color: #00aaff;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.search-bar input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 40px 10px 10px;
+  border: 2px solid #c71585;
+  box-shadow: 0px 4px 12px rgba(199, 21, 133, 0.5), 0px 4px 12px rgba(199, 21, 133, 0.5);
+  border-radius: 20px;
+}
+
+.search-bar .fa-search {
+  position: absolute;
+  right: 10px;
+  color: #888;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  border: 2px solid #c71585;
+  box-shadow: 0px 4px 12px rgba(199, 21, 133, 0.5), 0px 4px 12px rgba(199, 21, 133, 0.5);
+}
+
+.modal-content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #c71585;
+  box-shadow: 0px 4px 12px rgba(199, 21, 133, 0.5), 0px 4px 12px rgba(199, 21, 133, 0.5);
+}
+
+.modal .product-info ul li {
+  text-align: flex;
+  color: black;
+  font-weight: bold;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.modal .product-info h3 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal .product-info p {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.modal .product-info .price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #c71585;
+  text-align: left;
+}
+
+.modal .add-to-cart {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #c71585;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  width: 47%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal .add-to-cart:hover {
+  background-color: #ff0da6;
+}
+
+.left-button {
+  margin-right: 5px;
+}
+
+.right-button {
+  margin-left: 5px;
+}
+
+.modal .add-to-cart i {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px 0;
+  border-bottom: 2px solid #c71585;
+  color: #e0e0e0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: #ff00ff;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(199, 21, 133, 0.8);
+}
+
+button:hover {
+  background-color: #8b0e5d;
+  box-shadow: 0px 4px 12px rgba(199, 21, 133, 0.5), 0px 4px 12px rgba(199, 21, 133, 0.5);
+}
+hr {
+  border: 1px solid #c71585;
+  box-shadow: 0px 4px 12px rgba(199, 21, 133, 0.5), 0px 4px 12px rgba(199, 21, 133, 0.5);
+}
+.container {
+    text-align: center;
+    padding: 20px;
+}
+.container h1 {
+    color: #ccc;
+    margin-bottom: 40px;
+}
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.panel {
+    display: inline-block;
+    background-color: #222;
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.panel h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.panel img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #c71585;
+  box-shadow: 0px 4px 12px rgba(199, 21, 133, 0.5), 0px 4px 12px rgba(199, 21, 133, 0.5);
+}
+.panel p {
+  color: #fff;
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: left;
+}
+.panel .price {
+  font-size: 24px;
+  color: #fff;
+  margin: 20px 0;
+  text-align: center;
+  background-color: #ff00ff;
+  border-radius: 10px;
+  padding: 5px;
+}
+.panel .buy-btn {
+  background-color: #ff00ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.panel .buy-btn:hover {
+  background-color: #cc00cc;
+}
+.panel .feature {
+  color: #ff00ff;
+  font-size: 18px;
+  margin: 5px 0;
+}
